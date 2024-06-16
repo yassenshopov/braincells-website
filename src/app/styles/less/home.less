@@ -1,0 +1,68 @@
+// out: "../css/home.module.css", compress: true, sourceMap: false
+
+.flexCenter(@dir) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: @dir;
+}
+
+.main {
+  .flexCenter(column);
+}
+
+.darkBg {
+  background-color: #f1f1f1;
+  color: #000;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0 , 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.nav {
+  width: 100%;
+  min-height: 10rem;
+}
+
+.footer {
+  width: 100%;
+  min-height: 5rem;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  color: #fff;
+  .flexCenter(column);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 8rem;
+  border-top: 1px solid #fff;
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  ul {
+    list-style-type: none;
+    .flexCenter(column);
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0;
+    li a {
+      font-weight: normal;
+    }
+  }
+  .footerContent {
+    width: 100%;
+    .flexCenter(row);
+    align-items: flex-start;
+    gap: 5rem;
+    padding: 1rem;
+    .footerContentExploreMore {
+      line-height: 4;
+      // box-sizing: border-box;
+      font-weight: 600;
+    }
+  }
+}
