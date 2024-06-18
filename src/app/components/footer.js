@@ -7,11 +7,11 @@ export default function Footer() {
     <footer className={home.footer}>
       <div className={home.footerContent}>
         <div className="contact-info">
-          <h4>Contact Us</h4>
-          <p>Email: contact@example.com</p>
+          <h4>Contact us</h4>
+          <a href="/contact-us" className={home.footerContentContactUs}>Contact form</a>
         </div>
         <div className="social-media-links">
-          <h4>Follow Us</h4>
+          <h4>Follow us</h4>
           <ul>
             <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">< FaYoutube /> YouTube</a></li>
             <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">< FaXTwitter /> Twitter</a></li>

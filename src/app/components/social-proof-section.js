@@ -2,7 +2,7 @@ import home from "../styles/css/home.module.css";
 
 export default function Nav() {
   return (
-    <nav className={home.nav + " " + home.darkBg}>
+    <nav>
       <ul>
         <li>
           <a href="/">Home</a>
