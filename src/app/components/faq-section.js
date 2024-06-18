@@ -21,7 +21,7 @@ export default function FAQSection() {
         <div>
           <h3><img src='https://www.notion.so/icons/question-mark_gray.svg?mode=light' alt='Question mark icon' />Is there a free tier?</h3>
           <p>
-            Yes, we offer a free tier with a limit of 1 active 'braincell'. You
+            Yes, we offer a free tier with a limit of 1 active `&apos;`braincell`&apos;`. You
             can upgrade to a paid plan at any time.
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function FAQSection() {
           <h3><img src='https://www.notion.so/icons/question-mark_gray.svg?mode=light' alt='Question mark icon' />Is there a risk for my Notion content?</h3>
           <p>
             Braincells.io only reads and writes to your Notion workspace. We
-            don't store any of your data on our servers.
+            don`&apos;`t store any of your data on our servers.
           </p>
         </div>
         <div>
@@ -43,7 +43,7 @@ export default function FAQSection() {
           <h3><img src='https://www.notion.so/icons/question-mark_gray.svg?mode=light' alt='Question mark icon' />What if I need help with a specific automation?</h3>
           <p>
             Customisation is key to our platform. If you have a specific need
-            that isn't covered by our current automations, we can create a
+            that isn`&apos;`t covered by our current automations, we can create a
             custom one for you.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function FAQSection() {
       <div className={home.faqSectionContact}>
         <h3>More questions?</h3>
         <p>
-          For any other questions, feel free to contact our team, and we'll get
+          For any other questions, feel free to contact our team, and we`&apos;`ll get
           back to you as soon as possible.
         </p>
         <a href='/contact-us' className={home.faqSectionContactButton}>
