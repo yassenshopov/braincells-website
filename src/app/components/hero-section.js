@@ -8,6 +8,7 @@ import {
 } from "react-icons/md";
 import { FaCircle, FaPlus } from "react-icons/fa6";
 import { useEffect, useState } from "react";
+import FlashingSquares from "./flashing-squares";
 
 export default function HeroSection() {
   const kanbanCardTypes = {
@@ -34,7 +35,7 @@ export default function HeroSection() {
         onClick={() => {
           let select = document.querySelector(
             `.${home.kanbanCard}[data-index="${index}"] select`
-          );          
+          );
           select.focus();
         }}
       >
@@ -44,15 +45,13 @@ export default function HeroSection() {
           className={home.kanbanCardAvatar}
         />
         <div className={home.kanbanCardTitle}>
-          {type === "done" ? (
-            <MdCheckBox />
-          ) : (
-            <MdOutlineCheckBoxOutlineBlank />
-          )}
+          {type === "done" ? <MdCheckBox /> : <MdOutlineCheckBoxOutlineBlank />}
           <h3>Task {index + 1}</h3>
         </div>
         <div className={home.kanbanCardStatusContainer}>
-          <FaCircle className={home.kanbanCardStatusIcon + " " + home[`${type}`]} />
+          <FaCircle
+            className={home.kanbanCardStatusIcon + " " + home[`${type}`]}
+          />
           <select
             className={home.kanbanCardStatus + " " + home[`${type}`]}
             value={type}
@@ -100,6 +99,12 @@ export default function HeroSection() {
 
   return (
     <section className={home.hero + " " + home.darkBg}>
+      <FlashingSquares
+        top="0"
+        left="0"
+        widthSquares={Math.ceil(window.innerWidth / 40)}
+        heightSquares={Math.ceil(window.innerHeight / 40)}
+      />
       <div className={home.heroLeft}>
         <h1>Make Notion work for you - with automation</h1>
         <ul>

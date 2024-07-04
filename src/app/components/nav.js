@@ -2,7 +2,6 @@ import home from "../styles/css/home.module.css";
 import Image from "next/image";
 
 export default function Nav(props) {
-  console.log(props);
   return (
     <nav className={home.nav}>
       <div className={home.navLeft}>
