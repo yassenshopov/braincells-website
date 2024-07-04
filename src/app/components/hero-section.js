@@ -11,6 +11,16 @@ import { useEffect, useState } from "react";
 import FlashingSquares from "./flashing-squares";
 
 export default function HeroSection() {
+  const [windowHeight, setWindowHeight] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
+  useEffect(() => {
+    setWindowHeight(window.innerHeight);
+    setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", () => {
+      setWindowHeight(window.innerHeight);
+      setWindowWidth(window.innerWidth);
+    });
+  }, []);
   const kanbanCardTypes = {
     notStarted: {
       title: "Not started",
@@ -102,8 +112,8 @@ export default function HeroSection() {
       <FlashingSquares
         top="0"
         left="0"
-        widthSquares={Math.ceil(window.innerWidth / 40)}
-        heightSquares={Math.ceil(window.innerHeight / 40)}
+        widthSquares={Math.ceil(windowWidth / 40)}
+        heightSquares={Math.ceil(windowHeight / 40)}
       />
       <div className={home.heroLeft}>
         <h1>Make Notion work for you - with automation</h1>
