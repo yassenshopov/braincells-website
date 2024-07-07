@@ -86,14 +86,61 @@
   }
 }
 
+.navCTA {
+  .flexCenter(column);
+  width: 100%;
+  min-height: 4rem;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  visibility: hidden;
+  transition: all 200ms ease-in-out;
+  &.navCTAHidden {
+    visibility: hidden;
+    animation: slideOut 500ms ease-in-out;
+    @keyframes slideOut {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-4rem);
+      }
+    }
+  }
+  &.navCTAVisible {
+    visibility: visible;
+    animation: slideIn 500ms ease-in-out;
+    @keyframes slideIn {
+      from {
+        transform: translateY(-4rem);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  }
+  .navCTAButton {
+    width: 100%;
+    line-height: 4;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(0deg, #343434 0%, #1a1a1a 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: 0 0 1rem #00000030;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+  }
+}
+
 .hero {
   width: 100%;
   min-height: 40vh;
   .flexCenter(row);
   gap: 2rem;
   justify-content: space-around;
-  // align-items: flex-start;
-  padding: 8rem 12rem 1rem;
+  padding: 4rem 12rem 1rem;
   box-sizing: border-box;
   position: relative;
   .heroLeft,
@@ -169,7 +216,7 @@
   }
   .heroRight {
     width: 100%;
-    height: 50rem;
+    // height: 50rem;
     border-radius: 0.4rem;
     // border: 1px solid #1a1a1a60;
     .kanban {
@@ -187,6 +234,7 @@
         height: fit-content;
         // gap: 1rem;
         // padding: 1rem;
+        min-height: 10rem;
         padding-bottom: 1rem;
         border-radius: 0.4rem;
         background-color: #fff;
@@ -368,7 +416,7 @@
   }
   .automationsGalleryGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     min-height: 50vh;
     gap: 5rem;
     padding: 2rem 0;
@@ -585,7 +633,7 @@
         position: absolute;
         top: 50%;
         transform: rotate(5deg) translateY(-100%) scale(0.8) translateX(-50%);
-        right: -100%;        
+        right: -100%;
         font-size: 0.8rem;
         font-weight: 500;
         color: #1a1a1a;

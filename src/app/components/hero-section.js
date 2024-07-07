@@ -16,10 +16,10 @@ export default function HeroSection() {
   useEffect(() => {
     setWindowHeight(window.innerHeight);
     setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", () => {
-      setWindowHeight(window.innerHeight);
-      setWindowWidth(window.innerWidth);
-    });
+    // window.addEventListener("resize", () => {
+    //   setWindowHeight(window.innerHeight);
+    //   setWindowWidth(window.innerWidth);
+    // });
   }, []);
   const kanbanCardTypes = {
     notStarted: {

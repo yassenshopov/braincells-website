@@ -20,6 +20,7 @@ export default function AutomationsGallery() {
 
   const automationsList = {
     investments: {
+      thumbnail: investmentsThumbnail.src,
       icon: "https://www.notion.so/icons/chess-bishop_gray.svg?mode=light",
       title: "Investments automation",
       description: "Get current data for the price of your investments",
@@ -30,6 +31,18 @@ export default function AutomationsGallery() {
       title: "Google Calendar automation",
       description:
         "Sync your Google Calendar with Notion in a database of your choice",
+      tags: ["Productivity"],
+    },
+    library: {
+      icon: "https://www.notion.so/icons/book_gray.svg?mode=light",
+      title: "Book thumbnails generator",
+      description: "Get custom book thumbnails for your reading list",
+      tags: ["Productivity"],
+    },
+    videotheque: {
+      icon: "https://www.notion.so/icons/video_gray.svg?mode=light",
+      title: "Movie/Series thumbnails generator",
+      description: "Get custom video thumbnails for your watchlist",
       tags: ["Productivity"],
     },
     healthTracker: {
@@ -98,12 +111,6 @@ export default function AutomationsGallery() {
       description: "Track your sleep in Notion",
       tags: ["Health"],
     },
-    bookTracker: {
-      icon: "https://www.notion.so/icons/book_gray.svg?mode=light",
-      title: "Book tracker automation",
-      description: "Track your books in Notion",
-      tags: ["Productivity"],
-    },
     stockTracker: {
       icon: "https://www.notion.so/icons/chart-line_gray.svg?mode=light",
       title: "Stock tracker automation",
@@ -146,7 +153,7 @@ export default function AutomationsGallery() {
     return (
       <div className={home.automationItem}>
         <img
-          src={investmentsThumbnail.src}
+          src={automation.thumbnail || investmentsThumbnail.src}
           alt={automation.title}
           loading="lazy"
         />
