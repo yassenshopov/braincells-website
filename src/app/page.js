@@ -24,10 +24,10 @@ export default function Home() {
       {/* <Nav preLaunch={true} /> */}
       <NavCTA />
       <HeroSection />
+      <SocialProofSection />
       <BenefitsSection />
       <HowItWorksSection />
       <AutomationsGallery />
-      <SocialProofSection />
       <CTASection />
       <FAQSection />
       <IncentivesSection />

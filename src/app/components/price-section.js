@@ -38,7 +38,7 @@ export default function FAQSection() {
             <li>Basic support</li>
           </ul>
           <a href="/sign-up" className={home.priceSectionCardButton}>
-            Get started
+            Try it out
           </a>
         </div>
         <div className={home.priceSectionCard + " " + home.priceSectionCardHighlighted}>
@@ -57,9 +57,9 @@ export default function FAQSection() {
           </a>
         </div>
         <div className={home.priceSectionCard}>
-          <h2>Team</h2>
+          <h2>Business</h2>
           <h3><span>${isMonthly ? "50" : "40"}</span> /month</h3>
-          <p>For large teams and enterprises 🏢</p>
+          <p>For pro-users, teams and enterprises 🏢</p>
           <ul>
             <li>50 active braincells</li>
             <li>Full access to the whole Notion template gallery</li>
@@ -68,7 +68,7 @@ export default function FAQSection() {
             <li>Onboarding assistance</li>
           </ul>
           <a href="/contact-us" className={home.priceSectionCardButton}>
-            Contact us
+            Get started
           </a>
         </div>
       </div>

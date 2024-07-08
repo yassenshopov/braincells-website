@@ -121,6 +121,8 @@
   }
   .navCTAButton {
     width: 100%;
+    box-sizing: border-box;
+    max-width: 100vw;
     line-height: 4;
     text-align: center;
     cursor: pointer;
@@ -440,10 +442,11 @@
         height: auto;
       }
       & > *:not(img) {
-        padding: 0 1rem;
+        padding: 0 2rem;
       }
       .automationsGalleryGridItemTitle {
         .flexCenter(row);
+        align-self: flex-start;
         img {
           width: 2rem;
           height: 2rem;
@@ -459,6 +462,63 @@
       p {
         font-size: 1rem;
         font-weight: 400;
+      }
+    }
+  }
+}
+
+.benefitsSection {
+  .flexCenter(column);
+  width: 100%;
+  padding: 4rem 12rem;
+  box-sizing: border-box;
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  .benefitsSectionGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+    width: 100%;
+    & > div {
+      .flexCenter(column);
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 0 1rem #00000015;
+      border: 1px solid #00000015;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0 0 1rem #00000030;
+      }
+      h3 {
+        font-weight: 00;
+        color: @fontColorDark;
+        margin: 0;
+        line-height: 1.5;
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          vertical-align: bottom;
+          margin-right: 0.4rem;
+          color: @fontColorDark;
+          opacity: 0.5;
+          font-size: 1.6rem;
+          image-rendering: pixelated;
+        }
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #1a1a1a;
       }
     }
   }
@@ -514,7 +574,7 @@
       }
       p {
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 400;
         color: #1a1a1a;
       }
     }
@@ -744,6 +804,55 @@
             box-shadow: 0 0 1rem #00000015;
           }
         }
+      }
+    }
+  }
+  .faqSectionContactButton {
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid transparent;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: @fontFamilyMain;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    border: 1px solid transparent;
+    text-decoration: none;
+    &:hover {
+      transform: translateY(-0.2rem);
+      background-color: #fff;
+      color: #1a1a1a;
+      filter: drop-shadow(0 0 0.5rem #00000015);
+      border: 1px solid #1a1a1a60;
+    }
+  }
+}
+
+.socialProofSection {
+  background-color: #f9f9f9;
+  padding: 2rem 12rem;
+  h2 {
+    color: #676767;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .socialProofSectionList {
+    .flexCenter(row);
+    gap: 2rem;
+    padding: 2rem 10rem;
+    width: 100%;
+    box-sizing: border-box;
+    div {
+      .flexCenter(column);
+      width: 100%;
+      img {
+        max-width: 10rem;
+        width: 100%;
+        height: auto;
       }
     }
   }
