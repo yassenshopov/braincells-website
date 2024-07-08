@@ -21,7 +21,7 @@ export default function FAQSection() {
         <div>
           <h3><img src='https://www.notion.so/icons/question-mark_gray.svg?mode=light' alt='Question mark icon' />Is there a free tier?</h3>
           <p>
-            Yes, we offer a free tier with a limit of 1 active `&apos;`braincell`&apos;`. You
+            Yes, we offer a free tier with a limit of 1 active "braincell". You
             can upgrade to a paid plan at any time.
           </p>
         </div>

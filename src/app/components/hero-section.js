@@ -16,10 +16,6 @@ export default function HeroSection() {
   useEffect(() => {
     setWindowHeight(window.innerHeight);
     setWindowWidth(window.innerWidth);
-    // window.addEventListener("resize", () => {
-    //   setWindowHeight(window.innerHeight);
-    //   setWindowWidth(window.innerWidth);
-    // });
   }, []);
   const kanbanCardTypes = {
     notStarted: {
@@ -107,6 +103,7 @@ export default function HeroSection() {
     }
   }, []);
 
+
   return (
     <section className={home.hero + " " + home.darkBg}>
       <FlashingSquares
@@ -130,7 +127,6 @@ export default function HeroSection() {
         <h4>Join 1,300+ people who are already on the email list!</h4>
       </div>
       <div className={home.heroRight}>
-        {/* <Image src="/hero.png" alt="Hero image" width={500} height={500} /> */}
         <div className={home.kanban}>
           {kanbanCards}
           <div className={home.kanbanCard + " " + home.kanbanCardAdd}>

@@ -1,6 +1,13 @@
 "use client";
 import home from "../styles/css/home.module.css";
 import investmentsThumbnail from "../images/automations-gallery/investments.png";
+import libraryThumbnail from "../images/automations-gallery/library.png";
+import gcalThumbnail from "../images/automations-gallery/gcal.png";
+import movieThumbnail from "../images/automations-gallery/movie.png";
+import langThumbnail from "../images/automations-gallery/lang.png";
+import healthThumbnail from "../images/automations-gallery/health.png";
+import journalThumbnail from "../images/automations-gallery/journal.png";
+import workoutThumbnail from "../images/automations-gallery/workout.png";
 import { useState } from "react";
 
 export default function AutomationsGallery() {
@@ -21,12 +28,13 @@ export default function AutomationsGallery() {
   const automationsList = {
     investments: {
       thumbnail: investmentsThumbnail.src,
-      icon: "https://www.notion.so/icons/chess-bishop_gray.svg?mode=light",
+      icon: "https://www.notion.so/icons/chart-line_gray.svg?mode=light",
       title: "Investments automation",
       description: "Get current data for the price of your investments",
       tags: ["Finance"],
     },
     googleCalendar: {
+      thumbnail: gcalThumbnail.src,
       icon: "https://www.notion.so/icons/calendar-day_gray.svg?mode=light",
       title: "Google Calendar automation",
       description:
@@ -34,36 +42,42 @@ export default function AutomationsGallery() {
       tags: ["Productivity"],
     },
     library: {
+      thumbnail: libraryThumbnail.src,
       icon: "https://www.notion.so/icons/book_gray.svg?mode=light",
       title: "Book thumbnails generator",
       description: "Get custom book thumbnails for your reading list",
       tags: ["Productivity"],
     },
     videotheque: {
-      icon: "https://www.notion.so/icons/video_gray.svg?mode=light",
+      thumbnail: movieThumbnail.src,
+      icon: "https://www.notion.so/icons/movie_gray.svg?mode=light",
       title: "Movie/Series thumbnails generator",
       description: "Get custom video thumbnails for your watchlist",
       tags: ["Productivity"],
     },
     healthTracker: {
+      thumbnail: healthThumbnail.src,
       icon: "https://www.notion.so/icons/heart_gray.svg?mode=light",
       title: "Health tracker automation",
       description: "Track your health metrics in Notion",
       tags: ["Health"],
     },
     languageLearning: {
+      thumbnail: langThumbnail.src,
       icon: "https://www.notion.so/icons/translate_gray.svg?mode=light",
       title: "Language learning automation",
       description: "Automate your language learning routine",
       tags: ["Education"],
     },
     dailyJournal: {
+      thumbnail: journalThumbnail.src,
       icon: "https://www.notion.so/icons/book_gray.svg?mode=light",
       title: "Daily journal automation",
       description: "Automate your daily journaling routine",
       tags: ["Productivity"],
     },
     workoutTracker: {
+      thumbnail: workoutThumbnail.src,
       icon: "https://www.notion.so/icons/dumbbell_gray.svg?mode=light",
       title: "Workout tracker automation",
       description: "Track your workouts in Notion",
