@@ -9,7 +9,7 @@ export default function FlashingSquares(props) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveSquare((prev) => prev <= widthSquares * heightSquares - 1 ? 100 : prev + 10);
+      setActiveSquare((prev) => prev <= widthSquares * heightSquares - 1 ? 100 : prev + 6);
     }, 600);
     return () => clearInterval(interval);
   }, []);
