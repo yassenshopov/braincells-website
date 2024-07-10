@@ -15,14 +15,14 @@ export default function SocialProof() {
         </div>
         <div>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/2048px-Slack_icon_2019.svg.png"
-            alt="Slack logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
+            alt="Notion logo"
           />
         </div>
         <div>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
-            alt="Notion logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/2048px-Slack_icon_2019.svg.png"
+            alt="Slack logo"
           />
         </div>
         <div>

@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className={home.main}>
       {/* <Nav preLaunch={true} /> */}
-      <WaitlistPopup visible={false} />
+      <WaitlistPopup visible={true} />
       <NavCTA />
       <HeroSection />
       <SocialProofSection />
