@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./page.module.css";
 import home from "./styles/css/home.module.css";
 import Nav from "./components/nav";
@@ -15,7 +17,18 @@ import WaitlistPopup from "./components/waitlist-popup";
 
 export const metadata = {
   title: "Braincells.io | Automate your life in Notion",
-  description: "Automate your life in Notion with Braincells.io. Enhance your productivity with smart workflows, less manual work, and more time for creative tasks.",
+  description:
+    "Automate your life in Notion with Braincells.io. Enhance your productivity with smart workflows, less manual work, and more time for creative tasks.",
+};
+
+const [isDialogVisible, setIsDialogVisible] = useState(false);
+
+const handleOpenDialog = () => {
+  setIsDialogVisible(true);
+};
+
+const handleCloseDialog = () => {
+  setIsDialogVisible(false);
 };
 
 export default function Home() {
@@ -23,7 +36,7 @@ export default function Home() {
     <main className={home.main}>
       {/* <Nav preLaunch={true} /> */}
       <WaitlistPopup visible={false} />
-      <NavCTA />
+      <NavCTA onOpenDialog={handleOpenDialog} />
       <HeroSection />
       <SocialProofSection />
       <BenefitsSection />
